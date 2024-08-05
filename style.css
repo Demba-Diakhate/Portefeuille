@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*corps du site*/
+body {
+    font-family: 'Poppins', sans-serif;;
+    background-color:#1A1A29;
+    color: white;
+}
+/*Partie header*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color:#181824;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none; /*permet de retirer l'image ronde servant de puce*/
+}
+.navbar li{
+    margin-right: 20px;
+}
+.navbar a:hover,.navbar a.active{
+    color:#7562E0 ;
+}
+.logo{
+    font-size: 20px;
+    color: #7562E0;
+}
+/*Partie main*/
+
+.home .text .hello {
+    width: 148px;
+    height: 48px;
+    position: absolute;
+    top: 289px;
+    left: 136px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+}
+.home .text h1 {
+    width: 426px;
+    height: 78px;
+    position: absolute;
+    top: 310px;
+    left: 136px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 52px;
+}
+.home .text p {
+    width: 435px;
+    height: 81px;
+    position: absolute;
+    top: 433px;
+    left: 136px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+}
+.text a{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.btn-about-me {
+    position: absolute;
+    top: 550px;
+    left: 136px;
+    width: 130px;
+    height: 38px;
+    border-radius: 8px;
+    border: 2px solid  #7562E0;
+    background-color: #7562E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.btn-projects{
+    position: absolute;
+    top: 550px;
+    left: 290px;
+    width: 130px;
+    height: 38px;
+    border-radius: 8px;
+    border: 2px solid  #7562E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.home .portrait img{
+    position: absolute;
+    width: 444px;
+    height: 444px;
+    top: 197px;
+    left: 756px;
+}
+.home .cercle{
+    background-color: #7562E0;
+    position: absolute;
+    width: 486px;
+    height: 486px;
+    top: 275px;
+    left: 722px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.home .bande-rectangle{
+    background-color: #181824;
+    ;
+    width: 1360px;
+    height: 128px;
+    position: absolute;
+    top: 641px;
+}
+/*page About me */
+.about_me h1 {
+    color:#7562E0;
+    width: 168px;
+    height: 48px;
+    position: absolute;
+    top: 824px;
+    left: 136px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+}
+.about_me .text-presentation {
+    width: 1032px;
+    height: 101px;
+    position: absolute;
+    top: 880px;
+    left: 136px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+}
+.about_me .nbr-an {
+    color:#7562E0;
+    width: 127px;
+    height: 144px;
+    position: absolute;
+    top: 973px;
+    left: 129px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 96px;
+}
+.about_me .text-experience {
+    width: 920px;
+    height: 72px;
+    position: absolute;
+    top: 973px;
+    left: 278px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+}
+/*box-1*/
+.about_me .box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 1150px;
+    left: 129px;
+  
+}
+.box-1 .contenu-box-1{
+    width: 256px;
+    height: 254px;
+    background-color:#BDBDBD;
+    position: relative;
+}
+.contenu-box-1 img{
+    position: absolute;
+    top: 97px;
+    left: 24px;
+    width: 44px;
+    height: 44px;
+}
+.contenu-box-1 p{
+    position: absolute;
+    top: 153px;
+    left: 24px;
+    
+}
+.box-1 .contenu-box-1:hover{
+    background-color: #7562E0;
+}
+/*box-2*/
+.box-2 h2{
+    position: absolute;
+    top: 1450px;
+    left: 129px;
+    color: #7562E0;
+    font-size: 32px;
+    font-weight: 600;
+}
+.boite{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    row-gap: 45px;
+    position: absolute;
+    top: 1550px;
+    left: 129px;
+}
+.contenu-box-2{
+    width: 320px;
+    height: 320px;
+    border-radius: 16px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.border-violet{
+    border: 2px solid #7562E0;
+}
+.h3-violet h3{
+    color: #7562E0;
+}
+.contenu-box-2 img{
+    position: absolute;
+    top: 70px;
+
+}
+.contenu-box-2 h3{
+    position: absolute;
+    top: 125px;
+
+}
+.contenu-box-2 p{
+    position: absolute;
+    top: 169px;
+    padding: 20px;
+
+}
+
+/*page projects*/
+.projects h2{
+    width: 296px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #7562E0;
+    position: absolute;
+    top: 2322px;
+    left: 136px;
+}
+.projects .text-project p{
+    width: 1027px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    top: 2386px;
+    left: 136px;
+}
+.box-3{
+    position: absolute;
+    top: 2486px;
+    left: 138px;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    
+}
+.box{
+    width: 324px;
+    height: 397px;
+    border-radius: 8px;
+    background: #31313F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box img{
+    width: 280px;
+    height: 170px;
+    border-radius: 8px;
+    border: 2px solid #7562E0;
+    margin-top: -40px;
+    opacity: 40%;
+}
+.text-body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text-body h3{
+    font-size: 20px;
+    color: #7562E0;
+}
+.text-body p{
+    font-size: 16px;
+    margin-top: -20px;
+    padding-right: 15px;
+}
+.les-boutons{
+    display: flex;
+    gap: 14px;
+    margin-bottom: -50px;
+   
+}
+.les-boutons a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.les-boutons .view-live{
+    border: 2px solid #7562E0;
+    border-radius: 8px;
+    background-color: #7562E0;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.les-boutons .github-repo{
+    border: 2px solid #7562E0;
+    border-radius: 8px;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*page contact*/
+.contact{
+    position: relative;
+    
+}
+.contact-via-site{
+    position: absolute;
+    top: 3031px;
+    left: 136px;
+}
+.contact-via-site h2{
+    color: #7562E0;
+    font-weight: 600;
+    font-size: 32px;
+
+}
+.contact-via-site .text-contact{
+    font-weight: 500;
+    font-size: 18px;
+}
+.site-contact{
+    display: flex;
+    gap: 10px;
+}
+.text-message{
+    font-weight: 500;
+    font-size: 24px;
+    width: 475px;
+    height: 36px;
+    position: absolute;
+    top: 3010px;
+    left: 666px;
+}
+.message{
+    position: absolute;
+    top: 3091px;
+    left: 666px;
+    width: 350px;
+    height: 62px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-message{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-message input{
+    width: 472px;
+    height: 62px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    border: 2px solid #F5F5F5;
+    opacity: 31%; 
+}
+.bouton input{
+    position: absolute;
+   
+    left: 0px;
+    width: 174px;
+    height: 50px;
+    background: #7562E0;
+    border-radius: 8px;
+    border: 2px solid #7562E0;
+    color: white;
+}
+/*footer*/
+footer{
+    position: absolute;
+    top: 3468px;
+    left: 136px;
+}
+.text-footer{
+    display: flex;
+    gap: 15px;
+}
+.text-footer p{
+    font-weight: 500px;
+    font-size: 13px;
+    width: 215px;
+    height: 24px;
+    opacity: 50%;
+}
+.site-contact-2{
+    height: 50px;
+}
